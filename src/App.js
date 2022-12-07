@@ -5,9 +5,9 @@ import Footer from "./Pages/Footer/Footer";
 function App() {
   
   return (
-    <div className="">
+    <div className="max-w-[1400px] mx-auto">
      <MainLayout></MainLayout>
-     {/* <ErrorPage></ErrorPage> */}
+     <Footer></Footer>
     </div>
   );
 }

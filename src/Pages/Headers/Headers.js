@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 function Headers() {
     const [show, setShow] = useState(false);
     return (
-        <div className="bg-gray-100  md:h-screen  overflow-y-hidden" >
+        <div className="bg-gray-100 relative    overflow-y-hidden" style={{minHeight : '700px'}}>
             {/* Code block starts */}
             <dh-component>
                 <div class="absolute hidden md:block -bottom-12 -left-32 w-96 h-96">
@@ -61,7 +61,7 @@ function Headers() {
                                 </ul>
                             </div>
                         </div>
-                        <button className="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-indigo-700 text-indigo-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">Sign In</button>
+                        <button className="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-orange-300 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-orange-300 hover:text-white rounded border border-orange-300 text-orange-300 px-4 sm:px-8 py-1 sm:py-3 text-sm">Sign In</button>
                     </div>
                 </nav>
                 <div className="bg-gray-100">
@@ -82,14 +82,14 @@ function Headers() {
                             <p class="my-6 text-3xl text-center text-gray-800 font-black leading-7 md:leading-10">
                                 <Typewriter
                                     options={{
-                                        strings: ['Hi There','My name is Shakhawat Hossain 🤘','I am a Front-End Developer'],
+                                        strings: ['Hi There 🤘','My name is Shakhawat Hossain','I am a Front-End Developer'],
                                         autoStart: true,
                                         loop: true,
                                     }}
                                 />
                             </p>
-                            <h2 class="max-w-3xl py-2 mx-auto  sm:text-sm md:text-lg lg:text-xl xl:text-2xl text-center leading-7 md:leading-10">
-                            A <span>Front-End Developer</span> passionate about creating interactive applications and experience on the web
+                            <h2 class="max-w-3xl py-2 mx-auto  sm:text-sm md:text-lg lg:text-xl xl:text-2xl text-center text-gray-400 leading-7 md:leading-10">
+                            A <span className="text-orange-300">Front-End Developer</span> passionate about creating interactive applications and experience on the web
                             </h2>
                             {/* <p className="max-w-3xl py-2 mx-auto mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center  ">A <span>Front-End Developer</span> passionate about creating interactive applications and experience on the web</p> */}
                         </div>
