@@ -9,7 +9,9 @@ function App() {
   return (
     <div className="max-w-[1400px] mx-auto">
       <Headers></Headers>
+      
       <h1 className="text-2xl py-20 text-center text-orange-600 font-bold">Portfolio are Updating</h1>
+      <AllSkills></AllSkills>
       <About></About>
       <Contact></Contact>
       <Footer></Footer>
